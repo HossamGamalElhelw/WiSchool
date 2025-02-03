@@ -1,0 +1,1396 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Poppins", sans-serif;
+
+}
+.container{
+    padding: 0 100px;
+    max-width: 1920px;
+    margin: 0 auto;
+} 
+.subContainer{
+    padding-left: 100px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.pd-rgt{
+    padding-right: 100px;
+}
+@media only screen and (max-width: 1185px) {
+    .container{
+        padding: 0 50px;
+    }
+    .subContainer{
+        padding-left: 50px;
+    }
+    .pd-rgt{
+        padding-right: 50px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .container{
+        padding: 0 24px;
+    }
+    .subContainer{
+        padding-left: 24px;
+    }
+    .pd-rgt{
+        padding-right: 50px;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.green_color{
+    color: #09B451;
+}
+img{
+    max-width: 100%;
+}
+
+/* * ----> Start Sec Header <------ */
+.header{
+    font-family: "Open Sans", sans-serif;
+}
+.header_list_icon, .user_icon_login{
+    display: none;
+}
+.header_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.header_logo{
+    width: 132px;
+    flex-grow: 1;
+}
+.header_list_content{
+    width: 50%;
+    flex-grow: 1;
+}
+.header_list{
+    display: flex;
+    gap: 24px;
+    margin: 26px 0; 
+}   
+.header_link{
+    font-family: 'Open Sans';
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    color: #404040CC;
+}
+.header_link a{
+    color: #404040CC;
+}
+.header_icon_search{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.header_sign{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap : 8px;
+}
+.header_login, .header_register{
+    border: none;
+    cursor: pointer;
+}
+.header_login{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20.11px;
+    padding: 8px 18px;
+    color: #09B451;
+    background-color: #ffffff;
+}
+.header_register{
+    padding: 12px 24px;
+    background-color: #09B451;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+.header_register:hover{
+    background-color: #ffffff;
+    color: #09B451;
+    border: 1px solid #09B451;
+}
+
+/* * ->>>> Response Sec Header <<<<- */
+
+@media only screen and (max-width: 993px) {
+    .header_content{
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: 12px;
+    }
+    .header_list_content, .header_icon_search, .header_sign{
+        display: none;
+    }
+    .header_list_icon, .user_icon_login{
+        display: block;
+    }
+}
+/* * ----> End Sec Header <------ */
+
+/* * ----> Section Hero <------ */
+.sec_hero{
+    margin-bottom: 84px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.hero_main_content{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background: linear-gradient(
+    275deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(243, 251, 246, 1) 64%,
+    rgba(9, 180, 81, 0.14058123249299714) 100%);
+    border-radius: 50px;
+    width: 100%;
+    margin-bottom: 84px;
+}
+.hero_main_content::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 107px;
+    height: 100%;
+    border-radius: 0 50px 50px 0;
+    background-color: #e4ffff;
+}
+.sec_hero_left_side{
+    padding-top: 120px;
+    padding-left: 60px;
+    width: 51.6%;
+}
+.sec_hero_header{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.sec_hero_btn_get_started{
+    padding: 20px 41px;
+    background-color: #09B451;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    margin-top: 48px;
+    margin-bottom: 117px;
+}
+.sec_hero_btn_get_started:hover{
+    background-color: #ffffff;
+    color: #09B451;
+    cursor: pointer;
+}
+.sec_hero_right_side{
+    width: 49%;
+    position: relative;
+    padding-top: 49px;
+    z-index: 1;
+}
+.sec_hero_img_container {
+    position: absolute;
+    right: 39px;
+}
+
+.sec_hero_img {
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sec_hero_pos_abs1{
+    background-color: #ffffff;
+    width: 43.5%;
+    position: absolute;
+    padding: 17.68px 23.65px 12.09px 24.21px;
+    border-radius: 14px 14px 30px 14px;
+    top: 44.5%;
+    left: -22px;
+
+}
+.sec_hero_post_abs1_header{
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sec_hero_pos_abs2{
+    position: absolute;
+    text-align: center;
+    width: 21.4%;
+    border-radius: 6.89px 6.89px 17.22px 6.89px;
+    top: 65.5%;
+    right: 3%;
+    background-color: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 8px;
+}
+.sec_hero_pos_abs2_header{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+}
+.pos_abs2_picture{
+    object-fit: contain;
+}
+.pos_ab2_img{
+    width: 30px;
+}
+
+.hero_cards{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.hero_card_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: #DDFFFF;
+    padding: 10px 17px;
+    padding-left: 16px;
+}
+
+
+@media only screen and (max-width: 1024px){
+    .hero_main_content{
+        flex-direction: column;
+        border-radius: 0;
+    }
+    .hero_main_content::after{
+        border-radius: 0;
+    }
+    .sec_hero_header{
+        position: relative;
+        z-index: 1;
+    }
+    .sec_hero_left_side{
+        padding-top: 60px;
+    }
+    .sec_hero_right_side,.sec_hero_left_side{
+        width: 100%;
+    }
+    .sec_hero_right_side{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec_hero_img_container {
+        position: relative;
+        right: 0;
+    }
+    .sec_hero_pos_abs1{
+        width: 24%;
+        top: 44.5%;
+        left: 10%;
+    }
+    .sec_hero_pos_abs2{
+        width: 11%;
+        top: 65.5%;
+        right: 20%;
+    } 
+}
+@media only screen and (max-width: 976px){
+    .sec_hero_header{
+        font-size: 40px;
+    }
+    .sec_hero_btn_get_started{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .sec_hero_pos_abs1{
+        width: 40%;
+    }
+    .pos_abs1_picture{
+        width: 84px;
+        height: auto;
+    }
+    .sec_hero_pos_abs2{
+        width: 22%;
+    } 
+}
+
+@media only screen and (max-width: 768px){
+    .sec_hero_header{
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .hero_content::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 107px;
+        height: 100%;
+        background-color: #e4ffff;
+    }
+    .sec_hero_pos_abs1{
+        width: 30%;
+        padding: 9.6px 12.85px 6.57px 13.15px;
+    }
+    .sec_hero_pos_abs2{
+        width: 20%;
+    } 
+    .sec_hero_post_abs1_header{
+        font-size: 10px;
+    }
+    .sec_hero_pos_abs2_header{
+        font-size: 8px;
+    } 
+    .sec_hero_15k{
+        font-size: 14px;
+    }
+    .sec_hero_img_container {  
+        width: 50%;
+    }
+    .pos_ab2_img{
+        width: 18px;
+    }
+    .hero_main_content::after{
+        display: none;
+    }
+    .hero_cards{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto 1fr;
+        row-gap: 24px;
+        column-gap: 12px;
+        position: relative;
+        z-index: 1;
+        font-size: 14px;
+    }
+    .hero_card_actives{
+        grid-column: 1 / -1; 
+        justify-self: center; 
+        align-self: center;   
+    }
+    
+}
+
+/* * ----> Section fav courses <------ */
+
+.fav_courses{
+    margin-bottom: 98px;
+}
+.fav_courses_content{
+    position: relative;
+}
+.fav_courses_header{
+    display: flex ;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+.head_fav_courses_header{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.btn_sell_all{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333333;
+    background-color: #ffffff;
+    border: none;
+    text-align: end;
+}
+.btn_sell_all:hover{
+    cursor: pointer;
+}
+.fav_courses_details{
+    display: flex;
+    position: relative; 
+    justify-content: center;
+    gap: 32px; 
+}
+.fav_courses_item{
+    width: 25.5%;
+    height: 100%;
+    aspect-ratio: 6/10;
+    position: relative;
+}
+.fav_courses_item::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.fav_courses_item_des{
+    position: absolute;
+    bottom: 10px;
+    left: 24px;
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.fav_courses_item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.fav_courses_arrows{
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow_left, .arrow_right{
+    position: absolute;
+    background-color: #FFFFFF;
+    padding: 15px;
+    display: flex;
+    border-radius: 50%;
+    top: 37.5%;
+    text-align: center; 
+}
+.arrow_left{
+    left: 24px;
+}
+.arrow_right{
+    right: 54px;
+}
+/* * ->>>> Response Sec Fav Course <<<<- */
+@media only screen and (max-width : 1240px){
+    .fav_courses_item_des{
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width : 1024px) {
+    .fav_courses_arrows{
+        display: none;
+    }
+    
+}
+@media only screen and (max-width : 973px){
+    .fav_courses_item_des{
+        font-size: 20px;
+        
+    }
+}
+@media only screen and (max-width : 768px){
+    .fav_courses_header{
+        margin-bottom: 24px;
+    }
+    .head_fav_courses_header{
+        font-family: 'Poppins';
+        font-size: 16px;
+        font-weight: 500 ;
+    }
+    .btn_sell_all{
+        font-family: 'Poppins';
+        font-size: 14px;
+        width: 15%;
+    }
+}
+@media only screen and (max-width : 481px){
+    .fav_courses_content{
+        margin-bottom: 200px;
+    }
+    .fav_courses_details{
+        gap: 16px;
+        position: absolute;
+    }
+    .head_fav_courses_header{
+        width: 60%;
+    }
+    .fav_courses_details{
+        overflow-x: hidden;
+    }
+    .fav_courses_item{
+        position: relative;
+        width: 116px;
+        height: 133px;
+        left: 0;
+        aspect-ratio: 1/1.1;
+        border-radius: 5px;
+    }
+    .fav_courses_item_des{
+        font-size: 16px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+/* * ----> Section popular courses <------ */
+.popular_courses , .skills{
+    margin-bottom: 98px;
+}
+.popular_courses_content_header , .skills_content_header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.popular_courses_content_header h3 , .skills_content_header h3{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+}
+.popular_courses_content,.skills_content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(392px, 1fr));
+    grid-template-rows: auto auto auto;
+    gap: 32px;
+    
+}
+
+.popular_courses_item,.skills_item{
+    border-radius: 10px;    
+    display: flex;
+    flex-direction: column;
+}
+.non_active_item{
+    display: none;
+}
+.popular_courses_item_img img , .skills_item_img img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+.popular_courses_des_container,.skill_container_des_item{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 42px;   
+}
+
+.popular_courses_item_des,.skills_item_des{
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular_courses_star_icon , .skills_star_icon{
+    display: flex;
+}
+.star_icon_img{
+    width: 18px;
+    height: 18px;
+    margin: 3px 6px 3px 0;
+}
+.popular_courses_item_info , .skills_item_info{
+    display: flex;
+    justify-content: space-between;
+    justify-self: flex-end;
+}
+.popular_courses_item_info picture , .skills_item_info picture{
+    display: flex;
+}
+.popular_courses_time_std , .skills_time_std{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #333333;
+}
+.popular_courses_time_std h4 , .skills_time_std h4{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.students_courses_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+.popular_courses_group_icon , .skills_group_icon{
+    width: 16px;
+    height: 16px;
+}
+.students_courses{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.price_course{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #09B451;
+}
+.popular_courses_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px 8px 16px;
+    gap: 10px;
+    border-radius: 50px ;
+    background-color: #09B451;
+    color: #ffffff;
+    border: none;
+}
+.popular_courses_btn:hover{
+    cursor: pointer;
+}
+.popular_courses_btn_text{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+/* * ->>>> Response Sec Skills <<<<- */
+@media only screen and (max-width : 1024px){
+    .popular_courses_content,.skills_content{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        gap: 32px;
+    }   
+    .popular_courses_item_des, .skills_item_des{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .popular_courses_item_info,.skills_item_info{
+        flex-direction: column-reverse;
+        align-items: start;
+        gap: 12px;
+    }
+    
+    
+}
+@media only screen and (max-width : 768px){
+    .popular_courses_des_container,.skill_container_des_item{
+        gap: 4px;
+        padding: 16px;
+    } 
+    .popular_courses_content,.skills_content{
+        gap: 16px;
+    }
+    .non_active_item{
+        display: flex;
+    }
+    .popular_courses_time_std,.skills_time_std{
+        font-size: 12px;
+        font-weight: 400;
+        gap: 4px;
+    }
+    .popular_courses_content_header h3 , .skills_content_header h3{
+        font-size: 25px;
+    }
+    .star_icon_img{
+        width: 8px;
+        height: 8px;
+        margin: 2px 4px 2px 0; 
+    }
+    .review_value{
+        font-size: 8px;
+    }
+    .popular_courses_btn{
+        padding: 4px 8px;
+        gap: 2px;
+        border-radius: 50px ;
+        background-color: #09B451;
+        color: #ffffff;
+        border: none;
+    }
+    .popular_courses_btn_text{
+        font-size: 14px;
+    }
+    
+}
+@media only screen and (max-width : 481px){
+    .arrow_down{
+        width: 16px;
+    }
+    .popular_courses_content_header h3 , .skills_content_header h3{
+        font-size: 16px;
+    }
+}
+
+/* * ----> Section skills <------ */
+.skills_content{
+    position: relative;
+}
+.skills_arrow_left,.skills_arrow_right{
+    position: absolute;
+    background-color: #FFFFFF;
+    padding: 15px;
+    display: flex;
+    border-radius: 50%;
+    top: 22%;
+    text-align: center; 
+}
+.skills_arrow{
+    display: flex;
+    justify-content: space-between;
+}
+.skills_arrow_left{
+    left: 24px;
+}
+.skills_arrow_right{
+    right: 24px;
+}
+
+/* * ->>>> Response Sec Skills <<<<- */
+@media only screen and (max-width : 1240px){
+    .skills_arrow{
+        display: none;
+    }
+}
+/* * ----> Section education <------ */
+.education{
+    margin-bottom: 98px;
+}
+.edu_content{
+    display: flex;
+    gap: 60px;
+}
+.education_header{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    margin-bottom: 64px;
+}
+.edu_content_left_side{
+    position: relative;
+    width: 420px;
+}
+.edu_content_img_container{
+    width: 91%;
+}
+
+.edu_item{
+    display: flex;
+    margin-bottom: 32px;
+}
+.edu_content_des_header{
+    margin-bottom: 24px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 72px;
+    color: #333333;
+}
+
+.edu_job{
+    position: absolute;
+    background-color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    width: 129px;
+    aspect-ratio: 1/0.9;
+    top: 46%;
+    right: -38px;
+    padding: 12px 9px 26px 8px;
+    border-radius: 6.89px 6.89px 17.22px 6.89px;
+}
+.head_job_text{
+    color: #09B451;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+}
+.edu_item_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DDFFFF;
+    padding: 13px;
+    border-radius: 50%;
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+.edu_item_icon_img{
+    height: 30px;
+    object-fit: contain;
+}
+.edu_item_text{
+    display: flex;
+    align-items: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #333333;
+    padding-left: 24px;
+}
+.head_job{
+    position: relative;
+}
+.head_job_line{
+    position: absolute;
+    bottom: 0;
+    left: 31%;
+}
+/* * ->>>> Response Sec Education <<<<- */
+@media only screen and (max-width : 1024px) {
+    .edu_content{
+        flex-direction: column;
+    }
+    .edu_content_left_side{
+        width: 100%;
+    }
+}
+@media only screen and (max-width : 768px) {
+    .edu_item_icon{
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+    }
+    .edu_content_des_header{
+        font-family: 'Poppins';
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .head_job_text{
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+    }
+    .head_job_line{
+        width: 34.1px;
+    }
+    
+    .edu_content_left_side{
+        width: 100%;
+    }
+}
+
+/* * ----> Section Review <------ */
+
+.reviews{
+    text-align: center;
+    margin-bottom: 98px;
+    position: relative;
+}
+.review_header{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    color: #242243;
+    margin-bottom: 54px;
+}
+.reviews_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.review_left_side{
+    width: 32%;
+    text-align: start;
+    margin-left: 24px;
+}
+.review_left_side_header{ 
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65.37px;
+    margin-bottom: 60px;
+    
+}
+.green_student_text{
+    position: relative;
+}
+.edu_green_line{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.review_arrows{
+    display: flex;
+    gap: 48px;
+}
+.review_arrow_left ,.review_arrow_right{
+    display: flex;
+    background-color: #ffffff;
+    border: 1px solid #09B451;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.review_right_side{
+    width: 65.4%;
+    display: flex;
+    gap: 32px;
+}
+.review_person{
+    padding: 48px;
+    text-align: left;
+    border-radius: 10px ;
+    box-shadow: rgba(99, 99, 99, 0.08) 0px 2px 8px 0px;
+    overflow: hidden;
+}
+.review_person_des{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+.review_person_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.review_person_name{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27.24px;
+    color: #000000;
+}
+.review_person_job{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24.51px;
+    color: #09B451; 
+}
+/* * ->>> Response Sec Instructor <<<- */
+@media only screen and (max-width: 1080px){
+    .reviews_content{
+        flex-direction: column;
+    }
+    .review_header{
+        display: none;
+    }
+    .review_left_side{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-left: 0;
+    }
+    .review_left_side_header{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .review_arrows{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+    .review_arrow_left ,.review_arrow_right{
+        padding: 8.75px;
+    }
+    .review_right_side{
+        width: 100%;
+        max-height: 155px;
+        gap: 16px;
+    }
+    .review_person{
+        padding: 14px;
+        overflow-y: hidden;
+    }
+    .review_person_des{
+        display: flex;
+        gap:  12px;
+        margin-bottom: 12px;
+    }
+    .review_person_name{
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+    }
+    .review_person_job{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px; 
+    }
+    .review_person_des_img{
+        width: 28px;
+        height: 28px;
+    }
+    .review_person_text{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.34px;
+    }
+    .edu_green_line{
+        width: 105px;
+    }
+}
+
+/* * ----> Section Instructors <------ */
+.instructors{
+    display: flex;
+    justify-content: center;
+}
+.instructors_header{
+    margin-bottom: 64px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+}
+.instructors_content{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+.instructors_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 35px;
+    padding-top: 30px;
+    width: 33.3%;
+    aspect-ratio: 1/1.05;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.instructor_name{
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 600;   
+    line-height: 27.3px;
+    color: #333333;
+    padding-top: 16px;
+}
+.instructor_job{
+    font-size: 16.77px;
+    font-weight: 500;
+    line-height: 22.89px;
+    color: #09B451;
+    padding-top: 6px;
+}
+.instructor_text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+/* * ->>> Response Sec Instructor <<<- */
+@media only screen and (max-width : 1024px){
+    .instructors_content{
+        flex-wrap: wrap;
+    }
+    .instructors_item{
+        width: 47.5%;
+    }
+    
+}
+@media only screen and (max-width : 481px){
+    .instructors_content{
+        gap: 16px;
+    }
+    .instructors_item{
+        gap: 16px;
+        padding-top: 14px;
+    }
+    .instructor_name{
+        font-size: 10px;
+        line-height: 12.7px;
+        padding-top: 7px;
+    }
+    .instructor_job{
+        font-size: 7.81px;
+        line-height: 10.67px;
+        padding-top: 3px;
+    }
+    .instructor_text{
+        font-size: 8px;
+        line-height: 18px;
+    }
+    .instructor_info_img{
+        width: 53px;
+        height: 53px;
+    }
+}
+/* * ----> Section Contact <------ */
+.contact{
+    margin-top: 192px;
+    background-image: url('images/imgs_contact/background.png');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.contact_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 109px;
+    position: relative;
+    
+}
+.contact_img{
+    position: relative;
+    top: -57px;
+    left : -2px; 
+    width: 47.5%;
+}
+.contact_des{
+    width: 52.5%;
+    margin-right: 52px;
+}
+.contact_des_header{
+    font-family: 'Open Sans';
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 57.2px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+.contact_des_text{
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.68px;
+    color: #FFFFFF;
+    margin-bottom: 89px;
+}
+.contact_btn_started, .contact_btn_call{
+    font-family: 'Source Sans Pro';
+    padding: 20px 42px 20px 42px;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+}
+.contact_btn_started:hover, .contact_btn_call:hover{
+    cursor: pointer;
+}
+.contact_btn_started{
+    background-color: #09B451;
+    color: #FFFFFF;
+    margin-right: 31px;
+}
+.contact_btn_call{
+    color: #09B451;
+    background-color: #FFFFFF;
+}
+/* * ->>>> Response Sec Contact <<<<- */
+@media only screen and (max-width: 1350px){
+    .contact_des_header{
+        font-size: 35px;
+        margin-bottom: 24px;
+    }
+}
+@media only screen and (max-width: 1051px){
+    .contact_img{
+        display: none;
+    }
+    .contact_des{
+        width: 100%;
+        padding: 70px 16px;
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .contact_des_header{
+        font-size: 24px;
+        margin-bottom: 10px;
+        line-height: 38px;
+    }
+    .contact_des_text{
+        font-size: 16px;
+        margin-bottom: 64px;
+    }
+    .contact_btn{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .contact_btn_started, .contact_btn_call{
+        width: 100%;
+    }
+}
+/* * ----> Section Footer <------ */
+
+.footer{
+    background-color: #000000;
+    padding-top: 120px;
+}
+
+.footer_content_info{
+    display: flex;
+    color: #FFFFFF;
+}
+.footer_info_about{
+    width: 37%;
+    margin-right: 91px;
+    margin-bottom: 111px;
+}
+.footer_info_about_header{
+    font-family: Source Sans Pro;
+    font-size: 32.8px;
+    font-weight: 600;
+    line-height: 41.23px;
+    margin-bottom: 30.93px;
+}
+.footer_info_about_des{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 31px;
+}
+.footer_info_list_icons{
+    display: flex;
+    gap: 24px;
+}
+
+.footer_info_lists{
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.footer_subscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer_sub_header{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 17px;
+}
+.footer_list_home{
+    width: 10%;
+    margin-right: 72px;
+}
+.footer_list_sme{
+    width: 10%;
+    margin-right: 55px;
+}
+.footer_list_contact{
+    width: 21%;
+    margin-right: 55px;
+}
+.footer_list_job{
+    width: 10%;
+    margin-right: 88px;
+}
+.footer_list_uk{
+    width: 12%;
+    margin-right: 82px;
+}
+.footer_link a{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+.subscribe_form{
+    width: 44%;
+    display: flex;
+    padding-bottom: 52px;
+}
+.email_input{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    border: none;
+    margin: 0;
+    padding: 18px;
+    outline: none;
+}
+.email_input::placeholder{
+    color: #09B451;
+}
+.footer_sub_btn{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #FFFFFF;
+    background-color: #09B451;
+    padding: 14.18px 27px 13px 26px;
+    border: none;
+    margin: 0;
+}
+.footer_sub_btn:hover{
+    cursor: pointer;
+}
+@media only screen and (max-width: 980px) {
+    .footer_content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .footer_content_info{
+        flex-direction: column-reverse;
+    }
+    .footer_list_links{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-bottom: 25px;
+    }
+    .footer_list_links{
+        width:32%;
+        margin-right: 0;
+
+    }
+    .footer_list_job,.footer_list_uk{
+        display: none;
+    }
+    .subscribe_form{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 786px) {
+    .footer_info_about_des{
+        display: none;
+    }
+    .email_input{
+        padding: 12px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .footer_sub_btn{
+        font-size: 10px; 
+        line-height: 15px;
+        padding: 10px;
+        border: none;
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 1564px) {
+    .header_list{
+        margin-right: 24px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .container{
+        padding: 0 24px;
+    }
+}

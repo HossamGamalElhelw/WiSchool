@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="student , teacher , ....">
+    <meta name="description" content="WiSchool for students">
+
+    <!-- ! Fonts -->
+
+    <!-- * Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- * Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <!-- ! Css file -->
+    <link rel="stylesheet" href="style.css">
+    <title>WiSchool</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_content">
+                <picture class="header_list_icon">
+                    <img src="images/imgs_logo_hero_icons/list.png" alt="list_links">
+                </picture>
+                <picture class="header_logo">
+                    <a href="#"><img src="images/imgs_logo_hero_icons/logo.png" alt="header_logo"></a>
+                </picture>
+                <nav class="header_list_content">
+                    <ul class="header_list">
+                        <li class=" header_link link_home"><a href="#">Home</a></li>
+                        <li class=" header_link link_courses"><a href="#">Courses</a></li>
+                        <li class=" header_link link_instuctors"><a href="#">Instuctors</a></li>
+                        <li class=" header_link link_schedules"><a href="#">Schedules</a></li>
+                        <li class=" header_link link_contactUs"><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <picture class="header_icon_search">
+                    <img src="images/imgs_logo_hero_icons/search_icon.png" alt="search_icon">
+                </picture>
+                <div class="header_sign">
+                    <button class="header_login">Login</button>
+                    <button class="header_register">Register</button>
+                </div>
+                <picture class="user_icon_login">
+                    <img src="images/imgs_logo_hero_icons/user_login.png" alt="user_login">
+                </picture>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="sec_hero">
+            <div class="container">
+                <div class="hero_content">
+                    <div class="hero_main_content">
+                        <div class="sec_hero_left_side">
+                            <h1 class="sec_hero_header">
+                                <span class="sec_hero_header_line1">Quality <span
+                                        class="green_color">Education</span></span>
+                                <span class="sec_hero_header_line2">By Any Means</span>
+                                <span class="sec_hero_header_line3">Necessary.</span>
+                            </h1>
+                            <button class="sec_hero_btn_get_started">Get Started</button>
+                        </div>
+                        <div class="sec_hero_right_side">
+                            <picture class="sec_hero_img_container">
+                                <img class="sec_hero_img" src="images/imgs_logo_hero_icons/hero_img.png"
+                                    alt="photo of girl">
+                            </picture>
+                            <div class="sec_hero_pos_abs">
+                                <div class="sec_hero_pos_abs1">
+                                    <h2 class="sec_hero_post_abs1_header">
+                                        <span>Learn from best</span>
+                                        <span> <span class="green_color">instructors</span> around</span>
+                                        <span>the globe</span>
+                                        <picture class="pos_abs1_picture">
+                                            <img class="pos_abs1_img" src="images/imgs_logo_hero_icons/peopleGroup.png"
+                                                alt="peopleGroup image">
+                                        </picture>
+                                    </h2>
+                                </div>
+                                <div class="sec_hero_pos_abs2">
+                                    <picture class="pos_abs2_picture"><img class="pos_ab2_img"
+                                            src="images/imgs_logo_hero_icons/icon_user.png" alt="user_icon">
+                                    </picture>
+                                    <h2 class="sec_hero_15k green_color">15K</h2>
+                                    <h3 class="sec_hero_pos_abs2_header">Amazing students around the globe</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero_cards">
+                        <figure class="hero_card_item hero_card_problem">
+                            <img src="images/imgs_logo_hero_icons/problems_solving.png" alt="problem solving">
+                            <p>Problem Solving</p>
+                        </figure>
+                        <figure class="hero_card_item hero_card_live">
+                            <img src="images/imgs_logo_hero_icons/live_chat.png" alt="live chat">
+                            <p>Live Chat</p>
+                        </figure>
+                        <figure class="hero_card_item hero_card_group">
+                            <img src="images/imgs_logo_hero_icons/group_reading.png" alt="group_reading">
+                            <p>Group Reading</p>
+                        </figure>
+                        <figure class="hero_card_item hero_card_courses">
+                            <img src="images/imgs_logo_hero_icons/courses.png" alt="icon courses">
+                            <p>10k Courses</p>
+                        </figure>
+                        <figure class="hero_card_item hero_card_actives">
+                            <img src="images/imgs_logo_hero_icons/activity.png" alt="hand activities">
+                            <p>Hand-on activities</p>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fav_courses">
+            <div class="fav_courses_content subContainer pd-rgt">
+                <div class="fav_courses_header">
+                    <h2 class="head_fav_courses_header">Choose favourite course from top cartegories</h2>
+                    <a href="#" class="btn_sell_all">Sell all</a>
+                </div>
+                <div class="fav_courses_details">
+                    <figure class="fav_courses_item">
+                        <img src="images/img_sec_fav_courses/marketing.png" alt="marketing">
+                        <p class="fav_courses_item_des">Marketing</p>
+                    </figure>
+                    <figure class="fav_courses_item">
+                        <img src="images/img_sec_fav_courses/design.jpg" alt="design">
+                        <p class="fav_courses_item_des">Design</p>
+                    </figure>
+                    <figure class="fav_courses_item">
+                        <img src="images/img_sec_fav_courses/programming.jpg" alt="programming">
+                        <p class="fav_courses_item_des">Programming</p>
+                    </figure>
+                    <figure class="fav_courses_item">
+                        <img src="images/img_sec_fav_courses/technology.jpg" alt="technology">
+                        <p class="fav_courses_item_des">Technology</p>
+                    </figure>
+                    <div class="fav_courses_arrows">
+                        <picture class="arrow_left">
+                            <img src="images/img_sec_fav_courses/arrow_left.png" alt="arrow_left">
+                        </picture>
+                        <picture class="arrow_right">
+                            <img src="images/img_sec_fav_courses/arrow_right.png" alt="arrow_right">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular_courses">
+            <div class="container">
+                <div class="popular_courses_content_header">
+                    <h3>Most Popular Courses</h3>
+                    <button class="popular_courses_btn"> <img class="arrow_down" src="images/imgs_popular_courses/ic_round-less-than.png"
+                            alt="down_arrow">
+                        <h4 class="popular_courses_btn_text">Sort by</h4>
+                    </button>
+                </div>
+                <div class="popular_courses_content">
+                    <div class="popular_courses_item">
+                        <picture class="popular_courses_item_img">
+                            <img src="images/imgs_popular_courses/learn_marketing.png" alt="learn_marketing">
+                        </picture>
+                        <div class="popular_courses_des_container">
+                            <div class="popular_courses_item_des">
+                                <h3>Learn Marketing from Top Instructors.</h3>
+                                <figure class="popular_courses_star_icon">
+                                    <img class="star_icon_img" src="images/imgs_popular_courses/star.png" alt="star_icon">
+                                    <h4 class="review_value">4.5</h4>
+                                </figure>
+                            </div>
+                            <div class="popular_courses_item_info">
+                                <div class="popular_courses_time_std">
+                                    <h4> 6 weeks </h4>
+                                    <picture class="students_courses_item">
+                                        <img class="popular_courses_group_icon" src="images/common_imgs/ci_group.png"
+                                            alt="group">
+                                        <h5 class="students_courses">1.5k Students</h5>
+                                    </picture>
+                                </div>
+                                <h6 class="price_course">30.5$</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular_courses_item">
+                        <picture class="popular_courses_item_img">
+                            <img src="images/imgs_popular_courses/front-end.png" alt="front-end">
+                        </picture>
+                        <div class="popular_courses_des_container">
+                            <div class="popular_courses_item_des">
+                                <h3>Front-End Development is Not Hard As You Think </h3>
+                                <figure class="popular_courses_star_icon">
+                                    <img class="star_icon_img" src="images/imgs_popular_courses/star.png" alt="star_icon">
+                                    <h4 class="review_value">4.5</h4>
+                                </figure>
+                            </div>
+                            <div class="popular_courses_item_info">
+                                <div class="popular_courses_time_std">
+                                    <h4> 6 weeks </h4>
+                                    <picture class="students_courses_item">
+                                        <img class="popular_courses_group_icon" src="images/common_imgs/ci_group.png"
+                                            alt="group">
+                                        <h5 class="students_courses">1.5k Students</h5>
+                                    </picture>
+                                </div>
+                                <h6 class="price_course">30.5$</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular_courses_item">
+                        <picture class="popular_courses_item_img">
+                            <img src="images/imgs_popular_courses/ux.png" alt="ux-design">
+                        </picture>
+                        <div class="popular_courses_des_container">
+                            <div class="popular_courses_item_des">
+                                <h3>Everrything You Need To Know in UX </h3>
+                                <figure class="popular_courses_star_icon">
+                                    <img class="star_icon_img" src="images/imgs_popular_courses/star.png" alt="star_icon">
+                                    <h4 class="review_value">4.5</h4>
+                                </figure>
+                            </div>
+                            <div class="popular_courses_item_info">
+                                <div class="popular_courses_time_std">
+                                    <h4> 6 weeks </h4>
+                                    <picture class="students_courses_item">
+                                        <img class="popular_courses_group_icon" src="images/common_imgs/ci_group.png"
+                                            alt="group">
+                                        <h5 class="students_courses">1.5k Students</h5>
+                                    </picture>
+                                </div>
+                                <h6 class="price_course">30.5$</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular_courses_item">
+                        <picture class="popular_courses_item_img">
+                            <img src="images/imgs_popular_courses/photography.png" alt="photography">
+                        </picture>
+                        <div class="popular_courses_des_container">
+                            <div class="popular_courses_item_des">
+                                <h3>Learn Photography With Ease</h3>
+                                <figure class="popular_courses_star_icon">
+                                    <img class="star_icon_img" src="images/imgs_popular_courses/star.png" alt="star_icon">
+                                    <h4 class="review_value">4.5</h4>
+                                </figure>
+                            </div>
+                            <div class="popular_courses_item_info">
+                                <div class="popular_courses_time_std">
+                                    <h4> 6 weeks </h4>
+                                    <picture class="students_courses_item">
+                                        <img class="popular_courses_group_icon" src="images/common_imgs/ci_group.png"
+                                            alt="group">
+                                        <h5 class="students_courses">1.5k Students</h5>
+                                    </picture>
+                                </div>
+                                <h6 class="price_course">30.5$</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular_courses_item">
+                        <picture class="popular_courses_item_img">
+                            <img src="images/imgs_popular_courses/data.png" alt="data-analysis">
+                        </picture>
+                        <div class="popular_courses_des_container">
+                            <div class="popular_courses_item_des">
+                                <h3>Be a pro In Data A nalysis</h3>
+                                <figure class="popular_courses_star_icon">
+                                    <img class="star_icon_img" src="images/imgs_popular_courses/star.png" alt="star_icon">
+                                    <h4 class="review_value">4.5</h4>
+                                </figure>
+                            </div>
+                            <div class="popular_courses_item_info">
+                                <div class="popular_courses_time_std">
+                                    <h4> 6 weeks </h4>
+                                    <picture class="students_courses_item">
+                                        <img class="popular_courses_group_icon" src="images/common_imgs/ci_group.png"
+                                            alt="group">
+                                        <h5 class="students_courses">1.5k Students</h5>
+                                    </picture>
+                                </div>
+                                <h6 class="price_course">30.5$</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular_courses_item">
+                        <picture class="popular_courses_item_img">
+                            <img src="images/imgs_popular_courses/hacking.png" alt="hacking">
+                        </picture>
+                        <div class="popular_courses_des_container">
+                            <div class="popular_courses_item_des">
+                                <h3>Ethical Harking Is Not Hard As You Think </h3>
+                                <figure class="popular_courses_star_icon">
+                                    <img class="star_icon_img" src="images/imgs_popular_courses/star.png" alt="star_icon">
+                                    <h4 class="review_value">4.5</h4>
+                                </figure>
+                            </div>
+                            <div class="popular_courses_item_info">
+                                <div class="popular_courses_time_std">
+                                    <h4> 6 weeks </h4>
+                                    <picture class="students_courses_item">
+                                        <img class="popular_courses_group_icon" src="images/common_imgs/ci_group.png"
+                                            alt="group">
+                                        <h5 class="students_courses">1.5k Students</h5>
+                                    </picture>
+                                </div>
+                                <h6 class="price_course">30.5$</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="container">
+                <div class="skills_content_header">
+                    <h3>Learn a new skill in two hours</h3>
+                </div>
+                <div class="skills_content">
+                    <div class="skills_item">
+                        <picture class="skills_item_img">
+                            <img src="images/imgs_skills/business.png" alt="business">
+                        </picture>
+                        <div class="skill_container_des_item">
+
+                            <div class="skills_item_des">
+                                <h2>Learn Marketing from Top Instructors</h2>
+                                <figure class="skills_star_icon">
+                                    <img class="star_icon_img" src="images/imgs_popular_courses/star.png" alt="star_icon">
+                                    <h4 class="review_value">4.5</h4>
+                                </figure>
+                            </div>
+                            <div class="skills_item_info">
+                                <div class="skills_time_std">
+                                    <h4> 6 weeks </h4>
+                                    <picture class="students_courses_item">
+                                        <img class="skills_group_icon" src="images/common_imgs/ci_group.png"
+                                            alt="group">
+                                        <h5 class="students_courses">1.5k Students</h5>
+                                    </picture>
+                                </div>
+                                <h6 class="price_course">30.5$</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills_item">
+                        <picture class="skills_item_img">
+                            <img src="images/imgs_skills/figma.png" alt="figma">
+                        </picture>
+                        <div class="skill_container_des_item">
+                            <div class="skills_item_des">
+                                <h3>Front-end development is not hard as you think </h3>
+                                <figure class="skills_star_icon">
+                                    <img class="star_icon_img" src="images/imgs_popular_courses/star.png" alt="star_icon">
+                                    <h4 class="review_value">4.5</h4>
+                                </figure>
+                            </div>
+                            <div class="skills_item_info">
+                                <div class="skills_time_std">
+                                    <h4> 6 weeks </h4>
+                                    <picture class="students_courses_item">
+                                        <img class="skills_group_icon" src="images/common_imgs/ci_group.png"
+                                            alt="group">
+                                        <h5 class="students_courses">1.5k Students</h5>
+                                    </picture>
+                                </div>
+                                <h6 class="price_course">30.5$</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills_item">
+                        <picture class="skills_item_img">
+                            <img src="images/imgs_skills/gameDev.png" alt="ux-design">
+                        </picture>
+                        <div class="skill_container_des_item">
+
+                            <div class="skills_item_des">
+                                <h3>Everrything you need to know in UX </h3>
+                                <figure class="skills_star_icon">
+                                    <img class="star_icon_img" src="images/imgs_popular_courses/star.png" alt="star_icon">
+                                    <h4 class="review_value">4.5</h4>
+                                </figure>
+                            </div>
+                            <div class="skills_item_info">
+                                <div class="skills_time_std">
+                                    <h4> 6 weeks </h4>
+                                    <picture class="students_courses_item">
+                                        <img class="skills_group_icon" src="images/common_imgs/ci_group.png"
+                                            alt="group">
+                                        <h5 class="students_courses">1.5k Students</h5>
+                                    </picture>
+                                </div>
+                                <h6 class="price_course">30.5$</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills_item non_active_item">
+                        <picture class="skills_item_img">
+                            <img src="images/imgs_skills/gameDev.png" alt="ux-design">
+                        </picture>
+                        <div class="skill_container_des_item">
+
+                            <div class="skills_item_des">
+                                <h3>Everrything you need to know in UX </h3>
+                                <figure class="skills_star_icon">
+                                    <img class="star_icon_img" src="images/imgs_popular_courses/star.png" alt="star_icon">
+                                    <h4 class="review_value">4.5</h4>
+                                </figure>
+                            </div>
+                            <div class="skills_item_info">
+                                <div class="skills_time_std">
+                                    <h4> 6 weeks </h4>
+                                    <picture class="students_courses_item">
+                                        <img class="skills_group_icon" src="images/common_imgs/ci_group.png"
+                                            alt="group">
+                                        <h5 class="students_courses">1.5k Students</h5>
+                                    </picture>
+                                </div>
+                                <h6 class="price_course">30.5$</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills_item non_active_item">
+                        <picture class="skills_item_img">
+                            <img src="images/imgs_skills/gameDev.png" alt="ux-design">
+                        </picture>
+                        <div class="skill_container_des_item">
+
+                            <div class="skills_item_des">
+                                <h3>Everrything you need to know in UX </h3>
+                                <figure class="skills_star_icon">
+                                    <img class="star_icon_img" src="images/imgs_popular_courses/star.png" alt="star_icon">
+                                    <h4 class="review_value">4.5</h4>
+                                </figure>
+                            </div>
+                            <div class="skills_item_info">
+                                <div class="skills_time_std">
+                                    <h4> 6 weeks </h4>
+                                    <picture class="students_courses_item">
+                                        <img class="skills_group_icon" src="images/common_imgs/ci_group.png"
+                                            alt="group">
+                                        <h5 class="students_courses">1.5k Students</h5>
+                                    </picture>
+                                </div>
+                                <h6 class="price_course">30.5$</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills_item non_active_item">
+                        <picture class="skills_item_img">
+                            <img src="images/imgs_skills/gameDev.png" alt="ux-design">
+                        </picture>
+                        <div class="skill_container_des_item">
+
+                            <div class="skills_item_des">
+                                <h3>Everrything you need to know in UX </h3>
+                                <figure class="skills_star_icon">
+                                    <img class="star_icon_img" src="images/imgs_popular_courses/star.png" alt="star_icon">
+                                    <h4 class="review_value">4.5</h4>
+                                </figure>
+                            </div>
+                            <div class="skills_item_info">
+                                <div class="skills_time_std">
+                                    <h4> 6 weeks </h4>
+                                    <picture class="students_courses_item">
+                                        <img class="skills_group_icon" src="images/common_imgs/ci_group.png"
+                                            alt="group">
+                                        <h5 class="students_courses">1.5k Students</h5>
+                                    </picture>
+                                </div>
+                                <h6 class="price_course">30.5$</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills_arrow active_item">
+                        <picture class="skills_arrow_left">
+                            <img src="images/common_imgs/arrow_left.png" alt="arrow_left">
+                        </picture>
+                        <picture class="skills_arrow_right">
+                            <img src="images/common_imgs/arrow_right.png" alt="arrow_right">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="education">
+            <div class="container">
+                <h2 class="education_header">We Bring The Good Education To Life</h2>
+                <div class="edu_content">
+                    <div class="edu_content_left_side">
+                        <picture class="edu_content_img_container">
+                            <img class="edu_content_img_container" src="images/imgs_edu/education.png" alt="student">
+                        </picture>
+                        <div class="edu_job">
+                            <picture class="edu_job_icon">
+                                <img src="images/imgs_edu/bag_shopping.png" alt="shopping-bag">
+                            </picture>
+                            <div class="head_job">
+                                <h3 class="head_job_text">Job</h3>
+                                <img class="head_job_line" src="images/imgs_edu/line.png" alt="green-line">
+                            </div>
+                            <h4>Opportunities</h4>
+                        </div>
+                    </div>
+                    <div class="edu_content_des">
+                        <h3 class="edu_content_des_header">
+                            Let Your Education Do The Walking
+                        </h3>
+                        <div class="edu_item">
+                            <picture class="edu_item_icon">
+                                <img class="edu_item_icon_img" src="images/imgs_edu/bi_book.png" alt="book_icon">
+                            </picture>
+                            <h4 class="edu_item_text">Free E-book, Videos and kits</h4>
+                        </div>
+                        <div class="edu_item">
+                            <picture class="edu_item_icon">
+                                <img class="edu_item_icon_img" src="images/imgs_edu/field-time.png" alt="field_time">
+                            </picture>
+                            <h4 class="edu_item_text">Learn at your own pace</h4>
+                        </div>
+                        <div class="edu_item">
+                            <picture class="edu_item_icon">
+                                <img class="edu_item_icon_img" src="images/imgs_edu/shopping-bag.png"
+                                    alt="shopping-bag">
+                            </picture>
+                            <h4 class="edu_item_text">Collaborate with different learners around the globe</h4>
+                        </div>
+                        <div class="edu_item">
+                            <picture class="edu_item_icon">
+                                <img class="edu_item_icon_img" src="images/imgs_edu/ci_group.png" alt="ci_group">
+                            </picture>
+                            <h4 class="edu_item_text">Top instructors around the globe</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="subContainer">
+                <h2 class="review_header">Reviews</h2>
+                <div class="reviews_content">
+                    <div class="review_left_side">
+                        <h3 class="review_left_side_header">
+                            <span>What our</span>
+                            <span>
+                                <picture class="green_student_text">
+                                    <span class="green_color">Students</span>
+                                    <img class="edu_green_line" src="images/imgs_reviews/line.png" alt="line">
+                                </picture>
+                            </span>
+                            <span>say About Us</span>
+                        </h3>
+                        <div class="review_arrows">
+                            <picture class="review_arrow_left">
+                                <img src="images/common_imgs/arrow_left.png" alt="arrow_left">
+                            </picture>
+                            <picture class="review_arrow_right">
+                                <img src="images/common_imgs/arrow_right.png" alt="arrow_right">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="review_right_side">
+                        <div class="review_person">
+                            <figure class="review_person_des">
+                                <img class="review_person_des_img" src="images/imgs_reviews/person1.png" alt="person1">
+                                <div class="review_person_info">
+                                    <h4 class="review_person_name">Mohh Jumah</h4>
+                                    <h5 class="review_person_job">Senior Developer</h5>
+                                </div>
+                            </figure>
+                            <p class="review_person_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Consectetur ac blandit nam massa
+                                massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus.
+                                Interdum duis imperdiet venenatis </p>
+                        </div>
+                        <div class="review_person">
+                            <figure class="review_person_des">
+                                <img class="review_person_des_img" src="images/imgs_reviews/person2.png" alt="person2">
+                                <div class="review_person_info">
+                                    <h4 class="review_person_name">John Mark</h4>
+                                    <h5 class="review_person_job">Data Analyst</h5>
+                                </div>
+                            </figure>
+                            <p class="review_person_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Consectetur ac blandit nam massa
+                                massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus.
+                                Interdum duis imperdiet venenatis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="instructors">
+            <div class="container">
+                <h2 class="instructors_header">Meet our instructors</h2>
+                <div class="instructors_content">
+                    <div class="instructors_item">
+                        <figure class="instructors_info">
+                            <img class="instructor_info_img" src="images/imgs_instructors/instructor1.png"
+                                alt="instructor1">
+                            <h3 class="instructor_name">John Mark</h3>
+                            <h4 class="instructor_job">Senior Developer</h4>
+                        </figure>
+                        <p class="instructor_text">“Education will be for you what you want it to be” </p>
+                    </div>
+                    <div class="instructors_item">
+                        <figure class="instructors_info">
+                            <img class="instructor_info_img" src="images/imgs_instructors/instructor2.png"
+                                alt="instructor2">
+                            <h3 class="instructor_name">Lora Shrof</h3>
+                            <h4 class="instructor_job">Marketing Lead</h4>
+                        </figure>
+                        <p class="instructor_text">“Knowledge has to be improved, challenged, and increased constantly,
+                            or it vanishes” </p>
+                    </div>
+                    <div class="instructors_item">
+                        <figure class="instructors_info">
+                            <img class="instructor_info_img" src="images/imgs_instructors/instructor3.png"
+                                alt="instructor3">
+                            <h3 class="instructor_name">Zeng Chin</h3>
+                            <h4 class="instructor_job">Data Analist at Meta</h4>
+                        </figure>
+                        <p class="instructor_text">“To know that we know what we know, and to know that we do not know
+                            what we do not know, that is true knowledge” </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="contact_content container">
+                <picture class="contact_img">
+                    <img src="images/imgs_contact/contact_img.png" alt="contact_img">
+                </picture>
+                <div class="contact_des">
+                    <h2 class="contact_des_header">You don’t have to see the Whole staircase just take The first
+                        step
+                    </h2>
+                    <h3 class="contact_des_text">Amet in A suspendisse convallis eget, Amet in A Suspendisse
+                        convallis
+                        egetAmet in A </h3>
+                    <div class="contact_btn">
+                        <button class="contact_btn_started">Get Started</button>
+                        <button class="contact_btn_call">Place a call</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer_content container">
+            <div class="footer_content_info">
+                <div class="footer_info_about">
+                    <h2 class="footer_info_about_header">WiSchool</h2>
+                    <h3 class="footer_info_about_des">We are not here to sell you products, we sell value through
+                        our
+                        expertise.</h3>
+                    <ul class="footer_info_list_icons">
+                        <li class="footer_info_icon">
+                            <a href="#"><img src="images/footer/facebook.png" alt="facebook_icon"></a>
+                        </li>
+                        <li class="footer_info_icon">
+                            <a href="#"><img src="images/footer/twitter.png" alt="twitter_icon"></a>
+                        </li>
+                        <li class="footer_info_icon">
+                            <a href="#"><img src="images/footer/instagram.png" alt="instagram_icon"></a>
+                        </li>
+                        <li class="footer_info_icon">
+                            <a href="#"><img src="images/footer/linkedin.png" alt="linkedin_icon"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_info_lists">
+                    <ul class="footer_list_links footer_list_home">
+                        <li class="footer_link"><a href="#">Home</a></li>
+                        <li class="footer_link"><a href="#">Services</a></li>
+                        <li class="footer_link"><a href="#">Training</a></li>
+                        <li class="footer_link"><a href="#">Resources</a></li>
+                        <li class="footer_link"><a href="#">About Us</a></li>
+                    </ul>
+                    <ul class="footer_list_links footer_list_sme">
+                        <li class="footer_link"><a href="#">SME</a></li>
+                        <li class="footer_link"><a href="#">Solution</a></li>
+                        <li class="footer_link"><a href="#">Reviews</a></li>
+                        <li class="footer_link"><a href="#">Blog</a></li>
+                    </ul>
+                    <ul class="footer_list_links footer_list_contact">
+                        <li class="footer_link"><a href="#">Contact Us</a></li>
+                        <li class="footer_link"><a href="#">Place a Call</a></li>
+                        <li class="footer_link"><a href="#">Email</a></li>
+                        <li class="footer_link"><a href="#">Wischool@gmail.com</a></li>
+                    </ul>
+                    <ul class="footer_list_links footer_list_job">
+                        <li class="footer_link"><a href="#">Job Opening</a></li>
+                        <li class="footer_link"><a href="#">News</a></li>
+                        <li class="footer_link"><a href="#">Research</a></li>
+                    </ul>
+                    <ul class="footer_list_links footer_list_uk">
+                        <li class="footer_link"><a href="#">Uk Privacy Policy</a></li>
+                        <li class="footer_link"><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_subscribe">
+                <h2 class="footer_sub_header">Subscribe to get latest updates</h2>
+                <form class="subscribe_form" action="">
+                    <input class="email_input" type="text" placeholder="Your Email addrerss">
+                    <button class="footer_sub_btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
